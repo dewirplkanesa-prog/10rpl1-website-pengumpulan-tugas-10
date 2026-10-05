@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biodata</title>
+
+    <style>
+.button {
+  background-color: #0497aa;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+</style>
+
+</head>
+<body>
+    <h1>biodata</h1>
+    <form action="/action_page.php">
+        <label for="fname">Nama:</label>
+
+        <br>
+        <input type="text" id="fname" name="fname" value="" size="50">
+        
+        <br><br>
+        <label for="Alamat">Alamat</label>
+        <br>
+        <textarea name="Alamat" id="Alamat"></textarea>
+        
+        <br><br>
+        <form>
+            <label for="jurusan">jurusan</label>
+            <select id="jurusan" name="jurusan">
+                <option value="RPL">RPL</option>
+                <option value="TKJ">TKJ</option>
+                <option value="TSM">TSM</option>
+                <option value="TKR">TKR</option>
+                <option value="TEI">TEI</option>
+            </select>
+        </form>
+
+        <br> <br>
+        <label for="jenis-kelamin">jenis-kelamin</label>
+        <br>
+        <input type="radio" id="laki" name="jenis-kelamin" value="laki-laki">
+        <label for="laki">laki-laki</label>
+        <input type="radio" id="laki" name="jenis-kelamin" value="perempuan">
+        <label for="perempuan">perempuan</label>
+        <input type="radio" id="laki" name="jenis-kelamin" value="boty">
+        <label for="boty">boty</label> 
+        <br> <br>
+        <label for="TB">Tinggi Badan (cm)</label>
+        <input type="number" id="TB" name="berat badan  & tinggi badan"> 
+         <br> <br>       
+        <label for="BB">Berat Badan (kg)</label>
+        <input type="number" id="BB" name="berat badan & tinggi badan">
+        
+        <br> <br>
+        <label for="Hobi">Hobi</label>
+        <br>
+        <input type="text" id="Hobi" name="Hobi">
+
+        <br> <br>
+        <label for="nomor">nomor telepon</label>
+        <br>
+        <input type="number" max="13">
+    </form>
+    <BR></BR>
+    <a href="#" class="button">Click me</a>
+</body>
+</html>

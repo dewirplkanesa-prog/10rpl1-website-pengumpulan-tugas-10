@@ -1,0 +1,223 @@
+/* Mengatur semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan seluruh halaman */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    color: #222;
+}
+
+/* Kotak utama */
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 30px;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Foto profil */
+.profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #222;
+    margin-bottom: 20px;
+}
+
+/* Nama */
+h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+/* Kelas */
+.kelas {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Deskripsi */
+.deskripsi {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Tempat tombol tugas */
+.tugas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Tombol */
+.button {
+    display: block;
+    padding: 15px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Saat mouse diarahkan ke tombol */
+.button:hover {
+    background: #444;
+    transform: translateY(-3px);
+}
+
+
+/* HALAMAN */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    color: #222;
+}
+
+/* BACKGROUND FOTO */
+body::before {
+    content: "";
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-image: url("background1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Membuat foto background blur */
+    filter: blur(8px);
+    transform: scale(1.05);
+    z-index: -2;
+}
+
+/* LAPISAN GELAP TIPIS */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+
+/* KOTAK ISI */
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 30px;
+
+    /* Putih transparan */
+    background: rgba(255, 255, 255, 0.88);
+
+    /* Efek kaca */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    /* Supaya isi berada di atas background */
+    position: relative;
+    z-index: 1;
+}
+
+
+/* FOTO PROFIL */
+.profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #222;
+    margin-bottom: 20px;
+}
+
+
+/* NAMA */
+h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+
+/* KELAS */
+.kelas {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* DESKRIPSI */
+.deskripsi {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* TOMBOL TUGAS */
+.tugas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* TOMBOL */
+.button {
+    display: block;
+    padding: 15px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* HOVER TOMBOL */
+.button:hover {
+    background: #444;
+    transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 30px;
+    /* Foto background di dalam kotak tugas */
+    background-color: #B0CDE6;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
